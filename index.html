@@ -598,3 +598,77 @@
   </div>
  </div>
 </section>
+
+<!-- Footer section -->
+<footer
+      class="snoke-footer bg-black text-base-content px-6 py-10 lg:py-20 xl:px-36 xl:py-24">
+      <div
+        class="flex flex-col md:flex-row justify-between gap-4 border-b border-gray-700 border-dashed pb-5 lg:pb-10"
+      >
+        <nav class="flex text-center md:text-left">
+          <div class="space-y-2">
+            <h1 class="text-3xl font-extrabold text-white">Manik Paribahan</h1>
+            <p class="text-[#ffffffa1] w-full md:w-1/2 lg:w-2/3">
+              Manik Paribahan Ticket is a digital platform to make your daily commuting
+              better.
+            </p>
+          </div>
+        </nav>
+        <nav class="flex flex-col gap-3 text-white text-xl">
+          <div class="space-y-2 text-center md:text-left">
+            <p class="text-[#ffffffa1]">Download our app</p>
+          </div>
+          <button
+            class="btn bg-black text-white flex gap-2 justify-center items-center border border-white rounded-xl px-3 w-1/2 md:w-auto mx-auto"
+          >
+            <img src="./images/playstore.png" alt="" />
+            <div>
+              <p class="text-sm">GET IT ON</p>
+              <h2>Google Play</h2>
+            </div>
+          </button>
+        </nav>
+      </div>
+      <div
+        class="mt-14 text-sm text-white flex flex-col lg:flex-row justify-between gap-4 text-center lg:text-left"
+      >
+        <div class="font-light">
+          <p>Copyright @ 2020-2024 all rights reserved, Manik Paribahan limited</p>
+        </div>
+        <div
+          class="flex gap-8 lg:gap-5 xl:gap-14 items-center justify-center lg:justify-normal"
+        >
+          <p>Terms & condition</p>
+          <p>Return & refund policy</p>
+          <p>Privacy policy</p>
+        </div>
+      </div>
+    </footer>
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div
+        class="modal-box w-11/12 max-w-2xl flex justify-center items-center text-center flex-col gap-5 p-8"
+      >
+        <img src="./images/success.png" alt="" />
+        <h3 class="font-bold text-2xl text-primary-bg">SUCCESS</h3>
+        <p class="text-[#4A4A4A] text-xl font-medium">
+          Thank you for Booking Our Bus Seats. <br />
+          We are working hard to find the best service and deals for you.
+        </p>
+        <p class="text-[#4A4A4A] text-xl font-light">
+          Shortly you will find a confirmation in your email.
+        </p>
+        <div class="modal-action">
+          <form method="dialog" onsubmit="resetAllField()">
+            <button
+              type="submit"
+              class="btn w-auto my-4 text-white bg-primary-bg text-xl font-bold px-16 py-3 h-auto border-none rounded-3xl"
+            >
+              Continue
+            </button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
