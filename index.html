@@ -1,71 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 5</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manik paribahan</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles/style.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-bg": "#1DD100",
+              "heading-color": "#030712",
+              "message-color": "rgba(3, 7, 18, 0.60)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
 
-</head>
-<body class="container mx-auto lg:px-28 lg:pt-8 px-5 pt-4">
+    </style>
+  </head>
 
-  <!-- navbar section -->
+  <!-- Navbar section -->
+  <body class="">
     <section>
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-xl">B-Ticket</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Destination</a></li>
-                    <li><a>Search</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                  <button class="bg-lime-100	text-green-500	 font-bold py-2 px-4 rounded-md inline-flex items-center"> Bus
-                  <img src="images/bus-icon.png" alt="Image" class="w-4 h-4 mr-2" />
-                  </button>
-                  
-                  
-                </div>
-              </div>
-        </nav>
-    </section>
+    <header class="my-10 container mx-auto font-raleway">
+      <div class="navbar hidden xl:flex">
+        <div class="navbar-start">
+          <a class="btn btn-ghost">
+            <h1 class="text-4xl font-extrabold text-[#424247]">Manik paribahan</h1>
+          </a>
+        </div>
+        <div class="navbar-center">
+          <ul
+            class="menu menu-horizontal px-1 text-[#424247] hidden xl:flex text-xl"
+          >
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end mr-5 relative hidden lg:flex">
+          <button
+            class="btn text-primary-bg bg-[#1cd10025] md:text-xl font-bold px-5 py-4 md:px-6 md:py-4 h-auto border border-green-200 rounded-xl"
+          >
+            Bus <img class="ml-1" src="./images/bus-icon.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="navbar xl:hidden">
+        <div class="navbar-start">
+          <div class="dropdown relative">
+            <div tabindex="0" role="button" class="btn btn-ghost xl:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg"class="h-6 w-6 md:h-8 md:w-8 text-[heading-color]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/></svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 text-xl bg-gray-200 text-black"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost md:hidden">
+            <h1 class="text-2xl md:text-4xl font-extrabold text-[#424247]">
+              Manik paribahan
+            </h1>
+          </a>
+        </div>
+        <div class="navbar-center hidden md:flex">
+          <a class="btn btn-ghost">
+            <h1 class="text-4xl font-extrabold text-[#424247]">Manik paribahan</h1>
+          </a>
+        </div>
+        <div class="navbar-end">
+          <button
+            class="btn text-primary-bg bg-[#1cd10025] text-xl font-bold px-3 py-2 md:px-6 md:py-4 h-auto border border-green-200 rounded-xl"
+          >
+            Bus <img class="ml-1" src="./images/bus-icon.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
+  </section>  
+
 
     <!-- banner section -->
     <section>
-        <div class="hero carousel min-h-screen rounded-2xl" style="background-image: url('images/banner.png');">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-center text-neutral-content">
-              <div class="max-w-md">
-                <h1 class="mb-2 pb-30 text-4xl font-bold">End-to-End Travel with<br><span class="text-green-400">B Paribahan</span></h1>
-                <p class="mb-5">Your ticket to adventure starts here. Book your bus ride now!</p>
-                <button class=" mt-10 btn bg-green-500 hover:bg-green-500 text-black">Buy Tickets</button>
-              </div>
-            </div>
+       <div class="relative my-5 lg:my-10 px-5 xl:px-0">
+        <div class="w-full">
+          <div
+            id="banner_image"
+            class="relative bg-[url(./images/banner.png)] bg-cover h-[157px] md:h-[342px] lg:h-[462px] xl:h-[600px] 2xl:h-[720px] rounded-lg flex flex-col items-center text-center justify-center gap-1 md:gap-3 lg:gap-10"
+          >
+            <h1
+              class="text-base md:text-4xl lg:text-6xl font-extrabold text-white"
+            >
+              End-to-End Travel with
+            </h1>
+            <h1
+              class="text-base md:text-4xl lg:text-6xl font-extrabold text-primary-bg"
+            >
+              Manik Paribahan
+            </h1>
+
+            <p
+              class="text-white font-inter hidden md:inline md:text-base lg:text-lg md:w-3/4 lg:1/2"
+            >
+              You can buy ticket your tickets without any trouble from your home
+              and convenient places at any time.
+            </p>
+            <p class="text-white font-inter text-xs md:hidden lg:w-1/2">
+              You can buy ticket your tickets at any time at any place.
+            </p>
+            <button
+              onclick="smoothTransition()"
+              class="btn text-heading-color bg-primary-bg text-xl font-bold px-3 py-0 md:px-6 md:py-3 lg:px-8 lg:py-4 h-auto border-none rounded-xl"
+            >
+              Buy Ticket
+            </button>
           </div>
+        </div>
     </section>
     
     <!-- cupon section -->
